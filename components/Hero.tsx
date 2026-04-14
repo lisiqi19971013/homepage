@@ -27,11 +27,11 @@ export default function Hero() {
         <div className="flex flex-col items-center gap-10 md:flex-row md:items-start">
           {/* Avatar */}
           <div className="flex-shrink-0">
-            <div className="h-48 w-48 overflow-hidden rounded-lg border border-gray-200 bg-gray-100 shadow">
+            <div className="w-48 overflow-hidden rounded-lg border border-gray-200 bg-white shadow md:w-56">
               <img
                 src={profile.avatar}
                 alt={t(profile.name)}
-                className="h-full w-full object-cover"
+                className="h-auto w-full object-contain"
                 onError={(e) => {
                   (e.target as HTMLImageElement).style.display = "none";
                 }}
