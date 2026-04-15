@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { publications, type AuthorRole } from "@/data/publications";
 import { useLang } from "@/contexts/LanguageContext";
 import SectionTitle from "./SectionTitle";
@@ -30,6 +31,7 @@ const typeBadgeClass = {
 
 export default function Publications() {
   const { lang } = useLang();
+  const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   if (publications.length === 0) return null;
 
@@ -55,6 +57,10 @@ export default function Publications() {
           {publications.map((pub, idx) => {
             const badge = roleBadge[pub.role];
             const highlight = isHighlight(pub.role);
+            const figureAlt =
+              lang === "en"
+                ? `Representative figure for ${pub.title}`
+                : `${pub.title} 代表性图片`;
             return (
               <li
                 key={idx}
@@ -66,72 +72,97 @@ export default function Publications() {
                   <span className="absolute -left-px inset-y-0 w-1 rounded-l-lg bg-primary-500" />
                 )}
 
-                {/* Index number */}
-                <span className="absolute right-4 top-4 text-xs font-medium text-gray-300">
-                  [{idx + 1}]
-                </span>
+                <div className="flex flex-col gap-4 sm:flex-row">
+                  <div className="w-full shrink-0 sm:w-44">
+                    <div className="relative aspect-[4/3] overflow-hidden rounded-md border border-gray-200 bg-gray-50">
+                      {pub.figure ? (
+                        <Image
+                          src={`${BASE}${pub.figure}`}
+                          alt={figureAlt}
+                          fill
+                          unoptimized
+                          sizes="(min-width: 640px) 176px, 100vw"
+                          className="object-contain"
+                        />
+                      ) : (
+                        <div className="flex h-full items-center justify-center px-4 text-center text-xs text-gray-300">
+                          {lang === "en" ? "Figure pending" : "图片待补充"}
+                        </div>
+                      )}
+                    </div>
+                  </div>
 
-                {/* Title */}
-                <p className="pr-10 font-medium leading-snug text-gray-900">
-                  {pub.title}
-                </p>
-
-                {/* Authors */}
-                <p
-                  className="mt-1.5 text-sm text-gray-600"
-                  dangerouslySetInnerHTML={{ __html: pub.authors }}
-                />
-
-                {/* Venue + pages */}
-                <p className="mt-1 text-sm italic text-gray-500">
-                  {pub.venue}
-                  {pub.pages && `, ${pub.pages}`}
-                </p>
-
-                {/* Badges row */}
-                <div className="mt-3 flex flex-wrap items-center gap-2">
-                  <span
-                    className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-[11px] font-semibold ring-1 ring-inset ${typeBadgeClass[pub.type]}`}
-                  >
-                    {pub.venueShort}
-                  </span>
-
-                  <span className="text-[11px] text-gray-400">
-                    {pub.type === "journal"
-                      ? lang === "en" ? "Journal" : "期刊"
-                      : lang === "en" ? "Conference" : "会议"}
-                    {" \u00B7 "}
-                    {pub.year}
-                  </span>
-
-                  {badge && (
+                  <div className="min-w-0 flex-1">
+                    {/* Index number */}
                     <span
-                      className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-[11px] font-semibold ring-1 ring-inset ${badge.className}`}
+                      className="absolute right-4 top-4 text-xs font-medium text-gray-300"
                     >
-                      {lang === "en" ? badge.en : badge.zh}
+                      [{idx + 1}]
                     </span>
-                  )}
 
-                  {pub.doi && (
-                    <a
-                      href={pub.doi}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[11px] font-medium text-primary-600 hover:text-primary-700"
-                    >
-                      [DOI]
-                    </a>
-                  )}
-                  {pub.pdf && (
-                    <a
-                      href={pub.pdf}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[11px] font-medium text-primary-600 hover:text-primary-700"
-                    >
-                      [PDF]
-                    </a>
-                  )}
+                    {/* Title */}
+                    <p className="pr-10 font-medium leading-snug text-gray-900">
+                      {pub.title}
+                    </p>
+
+                    {/* Authors */}
+                    <p
+                      className="mt-1.5 text-sm text-gray-600"
+                      dangerouslySetInnerHTML={{ __html: pub.authors }}
+                    />
+
+                    {/* Venue + pages */}
+                    <p className="mt-1 text-sm italic text-gray-500">
+                      {pub.venue}
+                      {pub.pages && `, ${pub.pages}`}
+                    </p>
+
+                    {/* Badges row */}
+                    <div className="mt-3 flex flex-wrap items-center gap-2">
+                      <span
+                        className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-[11px] font-semibold ring-1 ring-inset ${typeBadgeClass[pub.type]}`}
+                      >
+                        {pub.venueShort}
+                      </span>
+
+                      <span className="text-[11px] text-gray-400">
+                        {pub.type === "journal"
+                          ? lang === "en" ? "Journal" : "期刊"
+                          : lang === "en" ? "Conference" : "会议"}
+                        {" \u00B7 "}
+                        {pub.year}
+                      </span>
+
+                      {badge && (
+                        <span
+                          className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-[11px] font-semibold ring-1 ring-inset ${badge.className}`}
+                        >
+                          {lang === "en" ? badge.en : badge.zh}
+                        </span>
+                      )}
+
+                      {pub.doi && (
+                        <a
+                          href={pub.doi}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[11px] font-medium text-primary-600 hover:text-primary-700"
+                        >
+                          [DOI]
+                        </a>
+                      )}
+                      {pub.pdf && (
+                        <a
+                          href={pub.pdf}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[11px] font-medium text-primary-600 hover:text-primary-700"
+                        >
+                          [PDF]
+                        </a>
+                      )}
+                    </div>
+                  </div>
                 </div>
               </li>
             );

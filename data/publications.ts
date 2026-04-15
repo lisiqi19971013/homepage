@@ -11,6 +11,7 @@ export interface Publication {
   pages?: string;
   doi?: string;
   pdf?: string;
+  figure?: string;
   role: AuthorRole;
 }
 
@@ -75,6 +76,7 @@ export const publications: Publication[] = [
     year: 2022,
     type: "journal",
     pages: "19(4): 307–318",
+    figure: "/paper-figures/image_deocclusion.png",
     role: "first",
   },
   {
@@ -84,6 +86,7 @@ export const publications: Publication[] = [
     venueShort: "IJCV",
     year: 2026,
     type: "journal",
+    figure: "/paper-figures/softhgnn.png",
     role: "corresponding",
   },
   {
@@ -130,6 +133,7 @@ export const publications: Publication[] = [
     year: 2024,
     type: "conference",
     pages: "18974–18983",
+    figure: "/paper-figures/3d_feature_tracking_via_event_camera.png",
     role: "first",
   },
   {
@@ -140,6 +144,7 @@ export const publications: Publication[] = [
     year: 2021,
     type: "conference",
     pages: "4480–4489",
+    figure: "/paper-figures/event_stream_super_resolution.png",
     role: "first",
   },
   {
@@ -150,6 +155,7 @@ export const publications: Publication[] = [
     year: 2020,
     type: "conference",
     pages: "11402–11409",
+    figure: "/paper-figures/amfnet.png",
     role: "first",
   },
   {
@@ -159,6 +165,7 @@ export const publications: Publication[] = [
     venueShort: "ICCV",
     year: 2025,
     type: "conference",
+    figure: "/paper-figures/hyper_depth.png",
     role: "co-first",
   },
   {
@@ -169,6 +176,7 @@ export const publications: Publication[] = [
     year: 2024,
     type: "journal",
     pages: "46(10): 6610–6622",
+    figure: "/paper-figures/hypermv.png",
     role: "co-author",
   },
   {
@@ -237,6 +245,7 @@ export const publications: Publication[] = [
     year: 2021,
     type: "conference",
     pages: "15890–15899",
+    figure: "/paper-figures/view_guided_point_cloud_completion.png",
     role: "co-author",
   },
   {
@@ -247,6 +256,7 @@ export const publications: Publication[] = [
     year: 2025,
     type: "conference",
     pages: "22161–22171",
+    figure: "/paper-figures/graphi2p.png",
     role: "co-author",
   },
   {
