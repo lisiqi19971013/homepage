@@ -26,6 +26,7 @@ export const publications: Publication[] = [
     year: 2023,
     type: "journal",
     pages: "45(6): 7764–7780",
+    figure: "/paper-figures/1 SuperFast 200\u00D7 Video Frame Interpolation via Event Camera.jpg",
     role: "corresponding",
   },
   {
@@ -36,6 +37,7 @@ export const publications: Publication[] = [
     year: 2025,
     type: "journal",
     pages: "133: 5483–5504",
+    figure: "/paper-figures/2 RGB-D Visual Perception for Occluded Scenes via Event Camera.jpg",
     role: "first",
   },
   {
@@ -46,6 +48,7 @@ export const publications: Publication[] = [
     year: 2025,
     type: "journal",
     pages: "112: 103211",
+    figure: "/paper-figures/3 High-Resolution Synthetic Aperture Imaging Method and Benchmark Based on Event-Frame Fusion.jpg",
     role: "first",
   },
   {
@@ -56,6 +59,7 @@ export const publications: Publication[] = [
     year: 2025,
     type: "journal",
     pages: "68(3): 134101",
+    figure: "/paper-figures/4 Event-Enhanced Synthetic Aperture Imaging.jpg",
     role: "first",
   },
   {
@@ -66,6 +70,7 @@ export const publications: Publication[] = [
     year: 2026,
     type: "journal",
     pages: "177: 113300",
+    figure: "/paper-figures/5 Event-based Facial Expression Recognition via Large Vision-Language Models.jpg",
     role: "first",
   },
   {
@@ -76,7 +81,7 @@ export const publications: Publication[] = [
     year: 2022,
     type: "journal",
     pages: "19(4): 307–318",
-    figure: "/paper-figures/image_deocclusion.png",
+    figure: "/paper-figures/6 Image De-occlusion via Event-enhanced Multi-modal Fusion Hybrid Network.jpg",
     role: "first",
   },
   {
@@ -86,7 +91,7 @@ export const publications: Publication[] = [
     venueShort: "IJCV",
     year: 2026,
     type: "journal",
-    figure: "/paper-figures/softhgnn.png",
+    figure: "/paper-figures/7 SoftHGNN Soft Hypergraph Neural Networks for General Visual Recognition.jpg",
     role: "corresponding",
   },
   {
@@ -105,6 +110,7 @@ export const publications: Publication[] = [
     venueShort: "TOMM",
     year: 2025,
     type: "journal",
+    figure: "/paper-figures/9 Multi-space Representation Fusion Enhanced Monocular Depth Estimation via Virtual Point Cloud.jpg",
     role: "corresponding",
   },
   {
@@ -114,6 +120,7 @@ export const publications: Publication[] = [
     venueShort: "TOMM",
     year: 2026,
     type: "journal",
+    figure: "/paper-figures/10 GLU-Net Global-Local Fusion Network for Event-Based Monocular Depth Estimation via Uncertainty Optimization.jpg",
     role: "corresponding",
   },
   {
@@ -123,6 +130,7 @@ export const publications: Publication[] = [
     venueShort: "CVPR",
     year: 2026,
     type: "conference",
+    figure: "/paper-figures/11 Hyper-PCN Hypergraph-Based Point Cloud Completion via High-Order Correlation Modeling.jpg",
     role: "corresponding",
   },
   {
@@ -133,7 +141,7 @@ export const publications: Publication[] = [
     year: 2024,
     type: "conference",
     pages: "18974–18983",
-    figure: "/paper-figures/3d_feature_tracking_via_event_camera.png",
+    figure: "/paper-figures/12 3D Feature Tracking via Event Camera.png",
     role: "first",
   },
   {
@@ -144,7 +152,7 @@ export const publications: Publication[] = [
     year: 2021,
     type: "conference",
     pages: "4480–4489",
-    figure: "/paper-figures/event_stream_super_resolution.png",
+    figure: "/paper-figures/13 Event Stream Super-Resolution via Spatiotemporal Constraint Learning.jpg",
     role: "first",
   },
   {
@@ -155,7 +163,7 @@ export const publications: Publication[] = [
     year: 2020,
     type: "conference",
     pages: "11402–11409",
-    figure: "/paper-figures/amfnet.png",
+    figure: "/paper-figures/14 Attention-Based Multi-Modal Fusion Network for Semantic Scene Completion.jpg",
     role: "first",
   },
   {
@@ -165,7 +173,7 @@ export const publications: Publication[] = [
     venueShort: "ICCV",
     year: 2025,
     type: "conference",
-    figure: "/paper-figures/hyper_depth.png",
+    figure: "/paper-figures/15 Hyper-Depth Hypergraph-based Multi-Scale Representation Fusion for Monocular Depth Estimation.png",
     role: "co-first",
   },
   {
@@ -176,7 +184,7 @@ export const publications: Publication[] = [
     year: 2024,
     type: "journal",
     pages: "46(10): 6610–6622",
-    figure: "/paper-figures/hypermv.png",
+    figure: "/paper-figures/16 Hypergraph-Based Multi-View Action Recognition Using Event Cameras.jpg",
     role: "co-author",
   },
   {
@@ -187,6 +195,7 @@ export const publications: Publication[] = [
     year: 2023,
     type: "journal",
     pages: "45(12): 14081–14097",
+    figure: "/paper-figures/17 Action Recognition and Benchmark Using Event Cameras.jpg",
     role: "co-author",
   },
   {
@@ -196,6 +205,7 @@ export const publications: Publication[] = [
     venueShort: "IJCV",
     year: 2025,
     type: "journal",
+    figure: "/paper-figures/18 Image Matting and 3D Reconstruction in One Loop.jpg",
     role: "co-author",
   },
   {
@@ -206,6 +216,7 @@ export const publications: Publication[] = [
     year: 2024,
     type: "journal",
     pages: "27: 1349–1361",
+    figure: "/paper-figures/19 EvCSLR Event-guided Continuous Sign Language Recognition and Benchmark.jpg",
     role: "co-author",
   },
   {
@@ -216,6 +227,7 @@ export const publications: Publication[] = [
     year: 2023,
     type: "journal",
     pages: "26: 1920–1931",
+    figure: "/paper-figures/20 Event-based Low-illumination Image Enhancement.jpg",
     role: "co-author",
   },
   {
@@ -225,6 +237,7 @@ export const publications: Publication[] = [
     venueShort: "TMM",
     year: 2025,
     type: "journal",
+    figure: "/paper-figures/21 3D Semantic Gaussian via Geometric-Semantic Hypergraph Computation.jpeg",
     role: "co-author",
   },
   {
@@ -235,6 +248,7 @@ export const publications: Publication[] = [
     year: 2025,
     type: "journal",
     pages: "34: 5598–5613",
+    figure: "/paper-figures/22 A Real-World Animation Super-Resolution Benchmark with Color Degradation and Multi-Scale Multi-Frequency Alignment.jpg",
     role: "co-author",
   },
   {
@@ -245,7 +259,7 @@ export const publications: Publication[] = [
     year: 2021,
     type: "conference",
     pages: "15890–15899",
-    figure: "/paper-figures/view_guided_point_cloud_completion.png",
+    figure: "/paper-figures/23 View-Guided Point Cloud Completion.png",
     role: "co-author",
   },
   {
@@ -256,7 +270,7 @@ export const publications: Publication[] = [
     year: 2025,
     type: "conference",
     pages: "22161–22171",
-    figure: "/paper-figures/graphi2p.png",
+    figure: "/paper-figures/24 GraphI2P Image-to-Point Cloud Registration with Exploring Pattern of Correspondence via Graph Learning.png",
     role: "co-author",
   },
   {
@@ -266,6 +280,7 @@ export const publications: Publication[] = [
     venueShort: "TMM",
     year: 2026,
     type: "journal",
+    figure: "/paper-figures/25 Region Correlation Refinement Hypergraph Convolution for Skeleton-Based Action Recognition.jpg",
     role: "co-author",
   },
 ];

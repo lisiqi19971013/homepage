@@ -77,7 +77,7 @@ export default function Publications() {
                     <div className="relative aspect-[4/3] overflow-hidden rounded-md border border-gray-200 bg-gray-50">
                       {pub.figure ? (
                         <Image
-                          src={`${BASE}${pub.figure}`}
+                          src={encodeURI(`${BASE}${pub.figure}`)}
                           alt={figureAlt}
                           fill
                           unoptimized
