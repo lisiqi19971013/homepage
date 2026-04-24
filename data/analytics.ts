@@ -1,7 +1,7 @@
 export const analytics = {
   // Replace this with your GoatCounter site code, for example "siqi-homepage".
   // This turns into: https://siqi-homepage.goatcounter.com
-  goatcounterCode: "",
+  goatcounterCode: "siqili",
 };
 
 export const goatcounterBase = analytics.goatcounterCode
