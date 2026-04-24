@@ -1,6 +1,7 @@
 "use client";
 
 import { profile } from "@/data/profile";
+import VisitorStats from "./VisitorStats";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -11,6 +12,7 @@ export default function Footer() {
         <p>
           &copy; {year} {profile.name.en} | {profile.name.zh}
         </p>
+        <VisitorStats />
       </div>
     </footer>
   );
