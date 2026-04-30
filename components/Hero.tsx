@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="flex flex-col items-center gap-10 md:flex-row md:items-start">
           {/* Avatar */}
           <div className="flex-shrink-0">
-            <div className="w-48 overflow-hidden rounded-lg border border-gray-200 bg-white shadow md:w-56">
+            <div className="w-40 overflow-hidden rounded-lg border border-gray-200 bg-white shadow md:w-48">
               <img
                 src={profile.avatar}
                 alt={t(profile.name)}

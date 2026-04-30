@@ -38,19 +38,11 @@ export default function Publications() {
   const isHighlight = (role: AuthorRole) =>
     role === "first" || role === "corresponding" || role === "co-first";
 
-  const totalCount = publications.length;
-  const highlightCount = publications.filter((p) => isHighlight(p.role)).length;
-
   return (
     <section className="py-16">
       <div className="mx-auto max-w-5xl px-6">
         <SectionTitle
           title={lang === "en" ? "Selected Publications" : "部分论文"}
-          subtitle={
-            lang === "en"
-              ? `${highlightCount} as first/corresponding author`
-              : `第一/通讯作者 ${highlightCount} 篇`
-          }
         />
 
         <ol className="space-y-4">
