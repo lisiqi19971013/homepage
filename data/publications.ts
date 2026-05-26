@@ -30,6 +30,15 @@ export const publications: Publication[] = [
     role: "corresponding",
   },
   {
+    title: "ColorPCR++: Unleash the Power of Color for Point Cloud Registration Using Hypergraph Computation",
+    authors: `Mu Juncheng, ${S}<sup>*</sup>, Zhao Yining, Gao Yue`,
+    venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    venueShort: "TPAMI",
+    year: 2026,
+    type: "journal",
+    role: "corresponding",
+  },
+  {
     title: "RGB-D Visual Perception for Occluded Scenes via Event Camera",
     authors: `${S}, Wu Zongze, Li Yipeng, Xue Zhou, Liu Yu-Shen, Gao Yue`,
     venue: "International Journal of Computer Vision",
