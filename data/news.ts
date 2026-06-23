@@ -8,10 +8,17 @@ export interface NewsItem {
 
 export const news: NewsItem[] = [
   {
+    date: "2026-06",
+    content: {
+      zh: "我们的工作 H^3Former 被 IEEE TIP 录用。",
+      en: "Our work H^3Former has been accepted by IEEE TIP.",
+    },
+  },
+  {
     date: "2026-05",
     content: {
-      zh: "一篇论文 ColorPCR++ 被 IEEE TPAMI 录用。",
-      en: "Our paper ColorPCR++ has been accepted by IEEE TPAMI.",
+      zh: "我们的工作 ColorPCR++ 被 IEEE TPAMI 录用。",
+      en: "Our work ColorPCR++ has been accepted by IEEE TPAMI.",
     },
   },
   {
