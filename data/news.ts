@@ -10,15 +10,15 @@ export const news: NewsItem[] = [
   {
     date: "2026-06",
     content: {
-      zh: "我们的工作 H^3Former 被 IEEE TIP 录用。",
-      en: "Our work H^3Former has been accepted by IEEE TIP.",
+      zh: "我们的工作 H³Former 被 IEEE TIP (IEEE Transactions on Image Processing) 录用。",
+      en: "Our work H³Former has been accepted by IEEE TIP (IEEE Transactions on Image Processing).",
     },
   },
   {
     date: "2026-05",
     content: {
-      zh: "我们的工作 ColorPCR++ 被 IEEE TPAMI 录用。",
-      en: "Our work ColorPCR++ has been accepted by IEEE TPAMI.",
+      zh: "我们的工作 ColorPCR++ 被 IEEE TPAMI (IEEE Transactions on Pattern Analysis and Machine Intelligence) 录用。",
+      en: "Our work ColorPCR++ has been accepted by IEEE TPAMI (IEEE Transactions on Pattern Analysis and Machine Intelligence).",
     },
   },
   {
