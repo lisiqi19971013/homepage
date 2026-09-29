@@ -8,6 +8,20 @@ export interface NewsItem {
 
 export const news: NewsItem[] = [
   {
+    date: "2026-09",
+    content: {
+      zh: "我们的工作 Ov-EvDet 被 IJCV (International Journal of Computer Vision) 录用。",
+      en: "Our work Ov-EvDet has been accepted by IJCV (International Journal of Computer Vision).",
+    },
+  },
+  {
+    date: "2026-09",
+    content: {
+      zh: "我们的工作 Vision Correlator 和 FrameRouter 被 NeurIPS 2026 录用。",
+      en: "Our works Vision Correlator and FrameRouter have been accepted at NeurIPS 2026.",
+    },
+  },
+  {
     date: "2026-06",
     content: {
       zh: "我们的工作 H³Former 被 IEEE TIP (IEEE Transactions on Image Processing) 录用。",
