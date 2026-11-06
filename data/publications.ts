@@ -57,6 +57,7 @@ const publicationEntries: Publication[] = [
     venueShort: "TPAMI",
     year: 2026,
     type: "journal",
+    figure: "/paper-figures/colorpcr++.png",
     role: "corresponding",
   },
   {
@@ -66,6 +67,7 @@ const publicationEntries: Publication[] = [
     venueShort: "NeurIPS",
     year: 2026,
     type: "conference",
+    figure: "/paper-figures/Vision Correlator.png",
     role: "corresponding",
   },
   {
@@ -75,6 +77,7 @@ const publicationEntries: Publication[] = [
     venueShort: "NeurIPS",
     year: 2026,
     type: "conference",
+    figure: "/paper-figures/FrameRouter.png",
     role: "corresponding",
   },
   {
@@ -84,6 +87,7 @@ const publicationEntries: Publication[] = [
     venueShort: "IJCV",
     year: 2026,
     type: "journal",
+    figure: "/paper-figures/Event-Based Facial Expression Recognition via Knowledge-Enhanced Hypergraph Computation.png",
     role: "first",
   },
   {
@@ -93,6 +97,7 @@ const publicationEntries: Publication[] = [
     venueShort: "TPAMI",
     year: 2026,
     type: "journal",
+    figure: "/paper-figures/hypercounter.png",
     role: "corresponding",
   },
   {
@@ -102,6 +107,7 @@ const publicationEntries: Publication[] = [
     venueShort: "IJCV",
     year: 2026,
     type: "journal",
+    figure: "/paper-figures/OV-EvDet.png",
     role: "first",
   },
   {
@@ -176,6 +182,7 @@ const publicationEntries: Publication[] = [
     venueShort: "TMM",
     year: 2026,
     type: "journal",
+    figure: "/paper-figures/M2C-Det.png",
     role: "corresponding",
   },
   {
@@ -185,6 +192,7 @@ const publicationEntries: Publication[] = [
     venueShort: "TMM",
     year: 2026,
     type: "journal",
+    figure: "/paper-figures/RegDepth.png",
     role: "corresponding",
   },
   {
@@ -194,6 +202,7 @@ const publicationEntries: Publication[] = [
     venueShort: "TMM",
     year: 2026,
     type: "journal",
+    figure: "/paper-figures/Hypergraph-Based Depth Map Quality Assessment Using Monocular Depth Estimation.png",
     role: "corresponding",
   },
   {
