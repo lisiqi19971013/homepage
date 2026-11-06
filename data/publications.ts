@@ -17,7 +17,28 @@ export interface Publication {
 
 const S = "<strong>Li Siqi</strong>";
 
-export const publications: Publication[] = [
+const journalPriority: Record<string, number> = {
+  TPAMI: 0,
+  IJCV: 1,
+  "Sci. China": 2,
+  TIP: 3,
+  TMM: 4,
+  "Info. Fusion": 5,
+  PR: 6,
+  TOMM: 7,
+  MIR: 8,
+};
+
+const otherJournalPriority = Object.keys(journalPriority).length;
+const conferencePriority = otherJournalPriority + 1;
+
+function publicationPriority(publication: Publication) {
+  return publication.type === "conference"
+    ? conferencePriority
+    : journalPriority[publication.venueShort] ?? otherJournalPriority;
+}
+
+const publicationEntries: Publication[] = [
   {
     title: "SuperFast: 200\u00D7 Video Frame Interpolation via Event Camera",
     authors: `Gao Yue, ${S}<sup>*</sup>, Li Yipeng, Guo Yandong, Dai Qionghai`,
@@ -338,3 +359,10 @@ export const publications: Publication[] = [
     role: "co-author",
   },
 ];
+
+export const publications = publicationEntries.sort(
+  (a, b) =>
+    Number(a.role === "co-author") - Number(b.role === "co-author") ||
+    publicationPriority(a) - publicationPriority(b) ||
+    b.year - a.year
+);
