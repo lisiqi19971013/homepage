@@ -8,6 +8,20 @@ export interface NewsItem {
 
 export const news: NewsItem[] = [
   {
+    date: "2026-11",
+    content: {
+      zh: "我们的工作 Hyper-Counter 被 IEEE TPAMI (IEEE Transactions on Pattern Analysis and Machine Intelligence) 录用。",
+      en: "Our work Hyper-Counter has been accepted by IEEE TPAMI (IEEE Transactions on Pattern Analysis and Machine Intelligence).",
+    },
+  },
+  {
+    date: "2026-10",
+    content: {
+      zh: "我们的工作 EvEMO 被 IJCV (International Journal of Computer Vision) 录用。",
+      en: "Our work EvEMO has been accepted by IJCV (International Journal of Computer Vision).",
+    },
+  },
+  {
     date: "2026-09",
     content: {
       zh: "我们的工作 Ov-EvDet 被 IJCV (International Journal of Computer Vision) 录用。",
