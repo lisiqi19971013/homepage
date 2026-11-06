@@ -8,6 +8,13 @@ export interface ServiceCategory {
 export const services: ServiceCategory[] = [
   {
     title: {
+      zh: "领域主席（Area Chair）",
+      en: "Area Chair",
+    },
+    items: ["ACML 2026"],
+  },
+  {
+    title: {
       zh: "期刊审稿人",
       en: "Journal Reviewer",
     },

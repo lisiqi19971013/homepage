@@ -9,6 +9,14 @@ export interface Award {
 export const awards: Award[] = [
   {
     title: {
+      zh: "入选清华大学“优秀博士后”（共10人）",
+      en: 'Selected as a Tsinghua University "Outstanding Postdoctoral Fellow" (10 recipients)',
+    },
+    organization: { zh: "清华大学", en: "Tsinghua University" },
+    year: 2026,
+  },
+  {
+    title: {
       zh: "清华大学水木学者",
       en: 'Tsinghua University "Shuimu Scholar"',
     },
