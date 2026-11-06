@@ -75,6 +75,15 @@ export const publications: Publication[] = [
     role: "corresponding",
   },
   {
+    title: "OV-EvDet: Event-Based Open-Vocabulary Object Detection",
+    authors: `${S}, Pan Shouan, Bao Wei, Zhang Yongji, Xi Haoning, Wu Zongze, Gao Yue`,
+    venue: "International Journal of Computer Vision",
+    venueShort: "IJCV",
+    year: 2026,
+    type: "journal",
+    role: "first",
+  },
+  {
     title: "RGB-D Visual Perception for Occluded Scenes via Event Camera",
     authors: `${S}, Wu Zongze, Li Yipeng, Xue Zhou, Liu Yu-Shen, Gao Yue`,
     venue: "International Journal of Computer Vision",

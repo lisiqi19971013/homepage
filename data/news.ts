@@ -24,8 +24,8 @@ export const news: NewsItem[] = [
   {
     date: "2026-09",
     content: {
-      zh: "我们的工作 Ov-EvDet 被 IJCV (International Journal of Computer Vision) 录用。",
-      en: "Our work Ov-EvDet has been accepted by IJCV (International Journal of Computer Vision).",
+      zh: "我们的工作 OV-EvDet 被 IJCV (International Journal of Computer Vision) 录用。",
+      en: "Our work OV-EvDet has been accepted by IJCV (International Journal of Computer Vision).",
     },
   },
   {
